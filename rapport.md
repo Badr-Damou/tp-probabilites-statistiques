@@ -4,13 +4,13 @@
 
 **Universite :** ............................................................
 
-**Module :** Probabilites et Statistiques pour le Machine Learning
+**Module :** Probabilites et Statistiques
 
-**Etudiant :** ............................................................
+**Etudiant :** Badr DAMOU
 
-**Enseignant :** ............................................................
+**Enseignant :** Hasan KARJOUN
 
-**Annee universitaire :** ............................................................
+**Annee universitaire :** 2025-2026
 
 **Titre :** Evaluation de probabilites, lois usuelles, regression lineaire et estimation
 
@@ -99,17 +99,17 @@ P(F|\overline D)=\frac{0.08 \times 0.25}{0.725}
 
 ### Resultats numeriques
 
-| Quantite | Valeur | Pourcentage |
-|---|---:|---:|
-| \(P(F)\) | 0.250000 | 25.00 % |
-| \(P(\overline F)\) | 0.750000 | 75.00 % |
-| \(P(D\mid F)\) | 0.920000 | 92.00 % |
-| \(P(D\mid \overline F)\) | 0.060000 | 6.00 % |
-| \(P(\overline D\mid F)\) | 0.080000 | 8.00 % |
-| \(P(\overline D\mid \overline F)\) | 0.940000 | 94.00 % |
-| \(P(D)\) | 0.275000 | 27.50 % |
-| \(P(F\mid D)\) | 0.836364 | 83.64 % |
-| \(P(F\mid \overline D)\) | 0.027586 | 2.76 % |
+| Quantite                           |   Valeur | Pourcentage |
+| ---------------------------------- | -------: | ----------: |
+| \(P(F)\)                           | 0.250000 |     25.00 % |
+| \(P(\overline F)\)                 | 0.750000 |     75.00 % |
+| \(P(D\mid F)\)                     | 0.920000 |     92.00 % |
+| \(P(D\mid \overline F)\)           | 0.060000 |      6.00 % |
+| \(P(\overline D\mid F)\)           | 0.080000 |      8.00 % |
+| \(P(\overline D\mid \overline F)\) | 0.940000 |     94.00 % |
+| \(P(D)\)                           | 0.275000 |     27.50 % |
+| \(P(F\mid D)\)                     | 0.836364 |     83.64 % |
+| \(P(F\mid \overline D)\)           | 0.027586 |      2.76 % |
 
 ### Resume du code Python
 
@@ -184,13 +184,13 @@ Var(X)=np(1-p)=20 \times 0.95 \times 0.05=0.95
 
 #### Resultats numeriques
 
-| Quantite | Valeur |
-|---|---:|
-| \(P(X=18)\) | 0.188677 |
+| Quantite        |   Valeur |
+| --------------- | -------: |
+| \(P(X=18)\)     | 0.188677 |
 | \(P(X \ge 19)\) | 0.735840 |
-| \(E(X)\) | 19.0000 |
-| \(Var(X)\) | 0.9500 |
-| \(\sigma\) | 0.974679 |
+| \(E(X)\)        |  19.0000 |
+| \(Var(X)\)      |   0.9500 |
+| \(\sigma\)      | 0.974679 |
 
 ### Partie B - Simulation Python
 
@@ -200,13 +200,13 @@ Le fichier `probleme2.py` utilise `numpy.random.default_rng` avec la graine fixe
 
 #### Resultats empiriques
 
-| Quantite | Valeur theorique | Valeur empirique |
-|---|---:|---:|
-| Moyenne | 19.0000 | 18.9290 |
-| Variance | 0.9500 | 0.9860 |
-| Ecart-type | 0.974679 | 0.992955 |
-| \(P(X=18)\) | 0.188677 | 0.209000 |
-| \(P(X \ge 19)\) | 0.735840 | 0.709000 |
+| Quantite        | Valeur theorique | Valeur empirique |
+| --------------- | ---------------: | ---------------: |
+| Moyenne         |          19.0000 |          18.9290 |
+| Variance        |           0.9500 |           0.9860 |
+| Ecart-type      |         0.974679 |         0.992955 |
+| \(P(X=18)\)     |         0.188677 |         0.209000 |
+| \(P(X \ge 19)\) |         0.735840 |         0.709000 |
 
 Les valeurs empiriques sont proches des valeurs theoriques. Les ecarts sont normaux car la simulation utilise un nombre fini d'experiences.
 
@@ -262,10 +262,10 @@ P(180 \le X \le 195) \approx P(179.5 \le Y \le 195.5)
 
 #### Comparaison numerique
 
-| Probabilite | Exacte binomiale | Approximation normale |
-|---|---:|---:|
-| \(P(X \ge 185)\) | 0.955644 | 0.962824 |
-| \(P(180 \le X \le 195)\) | 0.972393 | 0.962495 |
+| Probabilite              | Exacte binomiale | Approximation normale |
+| ------------------------ | ---------------: | --------------------: |
+| \(P(X \ge 185)\)         |         0.955644 |              0.962824 |
+| \(P(180 \le X \le 195)\) |         0.972393 |              0.962495 |
 
 L'approximation normale est assez proche des probabilites exactes. Les differences restent faibles, ce qui montre que l'approximation est raisonnable pour \(n=200\), meme si \(p=0.95\) est proche de 1.
 
@@ -288,22 +288,22 @@ Le systeme semble fiable et stable : avec 200 connexions, le nombre moyen de rec
 Les donnees representent la population mondiale, en milliards, entre 1950 et 2020 :
 
 | Annee | Population |
-|---:|---:|
-| 1950 | 2.54 |
-| 1955 | 2.77 |
-| 1960 | 3.03 |
-| 1965 | 3.34 |
-| 1970 | 3.70 |
-| 1975 | 4.08 |
-| 1980 | 4.46 |
-| 1985 | 4.87 |
-| 1990 | 5.33 |
-| 1995 | 5.74 |
-| 2000 | 6.14 |
-| 2005 | 6.54 |
-| 2010 | 6.96 |
-| 2015 | 7.38 |
-| 2020 | 7.80 |
+| ----: | ---------: |
+|  1950 |       2.54 |
+|  1955 |       2.77 |
+|  1960 |       3.03 |
+|  1965 |       3.34 |
+|  1970 |       3.70 |
+|  1975 |       4.08 |
+|  1980 |       4.46 |
+|  1985 |       4.87 |
+|  1990 |       5.33 |
+|  1995 |       5.74 |
+|  2000 |       6.14 |
+|  2005 |       6.54 |
+|  2010 |       6.96 |
+|  2015 |       7.38 |
+|  2020 |       7.80 |
 
 ### Modele mathematique
 
@@ -325,11 +325,11 @@ ou :
 Le point moyen est :
 
 \[
-\bar x = \frac{1}{n}\sum_{i=1}^n x_i = 1985
+\bar x = \frac{1}{n}\sum\_{i=1}^n x_i = 1985
 \]
 
 \[
-\bar y = \frac{1}{n}\sum_{i=1}^n y_i = 4.9787
+\bar y = \frac{1}{n}\sum\_{i=1}^n y_i = 4.9787
 \]
 
 Le coefficient de correlation lineaire calcule avec `np.corrcoef` est :
@@ -387,7 +387,7 @@ L'ordonnee a l'origine \(b\) a une interpretation directe limitee, car l'annee 0
 En Machine Learning, les parametres \(a\) et \(b\) sont choisis pour minimiser une fonction de perte, souvent l'erreur quadratique moyenne :
 
 \[
-MSE=\frac{1}{n}\sum_{i=1}^n (y_i-\hat y_i)^2
+MSE=\frac{1}{n}\sum\_{i=1}^n (y_i-\hat y_i)^2
 \]
 
 Cette minimisation peut se faire par la methode analytique des moindres carres ou par descente de gradient. Dans la descente de gradient, les parametres sont mis a jour iterativement afin de reduire l'erreur.
@@ -402,15 +402,15 @@ La prediction obtenue pour 2050 doit etre interpretee avec prudence. Elle repose
 
 Les longueurs d'abeilles sont donnees par classes :
 
-| Classe (mm) | Centre | Effectif |
-|---|---:|---:|
-| \([3.5,4.5[\) | 4 | 1 |
-| \([4.5,5.5[\) | 5 | 2 |
-| \([5.5,6.5[\) | 6 | 23 |
-| \([6.5,7.5[\) | 7 | 46 |
-| \([7.5,8.5[\) | 8 | 24 |
-| \([8.5,9.5[\) | 9 | 3 |
-| \([9.5,10.5[\) | 10 | 1 |
+| Classe (mm)    | Centre | Effectif |
+| -------------- | -----: | -------: |
+| \([3.5,4.5[\)  |      4 |        1 |
+| \([4.5,5.5[\)  |      5 |        2 |
+| \([5.5,6.5[\)  |      6 |       23 |
+| \([6.5,7.5[\)  |      7 |       46 |
+| \([7.5,8.5[\)  |      8 |       24 |
+| \([8.5,9.5[\)  |      9 |        3 |
+| \([9.5,10.5[\) |     10 |        1 |
 
 Le total est :
 
@@ -489,13 +489,13 @@ s=0.926108
 La variance de la population etant inconnue, on utilise la loi de Student :
 
 \[
-\bar x \pm t_{0.975,n-1}\frac{s}{\sqrt n}
+\bar x \pm t\_{0.975,n-1}\frac{s}{\sqrt n}
 \]
 
 Avec \(n=100\), \(n-1=99\) et :
 
 \[
-t_{0.975,99}=1.984217
+t\_{0.975,99}=1.984217
 \]
 
 La marge d'erreur est :
@@ -507,11 +507,11 @@ La marge d'erreur est :
 Donc :
 
 \[
-IC_{95\%}=[7.03-0.183760,\;7.03+0.183760]
+IC\_{95\%}=[7.03-0.183760,\;7.03+0.183760]
 \]
 
 \[
-IC_{95\%}=[6.846240,\;7.213760]
+IC\_{95\%}=[6.846240,\;7.213760]
 \]
 
 L'amplitude de l'intervalle est :
@@ -525,16 +525,16 @@ L'amplitude de l'intervalle est :
 On utilise l'approximation normale :
 
 \[
-2z_{0.975}\frac{s}{\sqrt n}<0.1
+2z\_{0.975}\frac{s}{\sqrt n}<0.1
 \]
 
 Donc :
 
 \[
-n>\left(\frac{2z_{0.975}s}{0.1}\right)^2
+n>\left(\frac{2z\_{0.975}s}{0.1}\right)^2
 \]
 
-Avec \(z_{0.975}=1.959964\) et \(s=0.926108\) :
+Avec \(z\_{0.975}=1.959964\) et \(s=0.926108\) :
 
 \[
 n>\left(\frac{2\times1.959964\times0.926108}{0.1}\right)^2
@@ -547,25 +547,25 @@ n>1317.85
 On arrondit au superieur :
 
 \[
-n_{\min}=1318
+n\_{\min}=1318
 \]
 
 Ce calcul utilise l'ecart-type corrige de l'echantillon comme estimation de l'ecart-type de la population.
 
 ### Resultats numeriques
 
-| Quantite | Valeur |
-|---|---:|
-| \(n\) | 100 |
-| Moyenne empirique \(m_e\) | 7.030000 mm |
-| Variance empirique \(V_e\) | 0.849100 |
-| Ecart-type empirique | 0.921466 mm |
-| Variance corrigee \(s^2\) | 0.857677 |
-| Ecart-type corrige \(s\) | 0.926108 mm |
-| \(t_{0.975,99}\) | 1.984217 |
-| IC 95 % | [6.846240 ; 7.213760] mm |
-| Amplitude | 0.367520 mm |
-| Taille minimale pour amplitude < 0.1 mm | 1318 |
+| Quantite                                |                   Valeur |
+| --------------------------------------- | -----------------------: |
+| \(n\)                                   |                      100 |
+| Moyenne empirique \(m_e\)               |              7.030000 mm |
+| Variance empirique \(V_e\)              |                 0.849100 |
+| Ecart-type empirique                    |              0.921466 mm |
+| Variance corrigee \(s^2\)               |                 0.857677 |
+| Ecart-type corrige \(s\)                |              0.926108 mm |
+| \(t\_{0.975,99}\)                       |                 1.984217 |
+| IC 95 %                                 | [6.846240 ; 7.213760] mm |
+| Amplitude                               |              0.367520 mm |
+| Taille minimale pour amplitude < 0.1 mm |                     1318 |
 
 ### Resume du code Python
 
